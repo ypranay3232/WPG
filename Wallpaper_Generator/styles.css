@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2 {
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+#logo {
+    text-decoration: none;
+    color: #E60023;
+}
+
+.search-form {
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    width: 50%;
+}
+
+.search-form input {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-form button {
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    background: #E60023;
+    color: white;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-form button:hover {
+    background: #ad021b;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 2rem 5rem;
+}
+
+.gallery-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-img:hover .gallery-info {
+    opacity: 1;
+}
+
+.gallery-info a {
+    color: white;
+    text-decoration: none;
+    background: #E60023;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+/* More Button */
+.nav-button {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.more {
+    padding: 1rem 3rem;
+    background: #E60023;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
